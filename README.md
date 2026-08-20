@@ -1,5 +1,8 @@
 # canva-mcp-server
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](package.json)
+
 Servidor MCP (Model Context Protocol) educacional que conecta um agente de IA à **Canva Connect API**. Feito como material de aula sobre mídias criativas com IA — mostra na prática como um MCP server é estruturado.
 
 ## O que ele faz
@@ -52,6 +55,8 @@ A Canva Connect API usa OAuth 2.0 (Authorization Code + PKCE). Passo a passo:
 export CANVA_ACCESS_TOKEN="seu_access_token_aqui"
 ```
 
+(há um `.env.example` no repositório com o mesmo template, caso prefira usar um arquivo `.env`)
+
 ## 4. Build e execução
 
 ```bash
@@ -97,3 +102,7 @@ Isso abre uma interface web para chamar as ferramentas manualmente e ver os resu
 - Implementar refresh automático do access token.
 - Adicionar suporte a `response_format` (markdown vs JSON) como no guia de boas práticas de MCP.
 - Trocar o transporte de stdio para Streamable HTTP e rodar como serviço remoto.
+
+## Licença
+
+[MIT](LICENSE)
